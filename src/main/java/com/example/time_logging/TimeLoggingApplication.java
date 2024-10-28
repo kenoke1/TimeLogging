@@ -11,3 +11,5 @@ public class TimeLoggingApplication {
 	}
 
 }
+
+/* TODO : authentication and authorization with jwt.. */

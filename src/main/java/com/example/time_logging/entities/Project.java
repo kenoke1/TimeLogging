@@ -22,7 +22,7 @@ public class Project {
     @JoinColumn(name = "user_id")
     private User user;
 
-    @OneToMany(mappedBy = "project", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "project", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<TImeLoad> timeLoads;
 
 }

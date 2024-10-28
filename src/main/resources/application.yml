@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/timeloggingloc
+    username: postgres
+    password: keno7396
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      properties:
+        hibernate:
+          format_sql: true
+      database: postgresql
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+
+#spring.application.name=time-logging
+#spring.datasource.url=jdbc:postgresql://localhost:5432/timeloggingloc
+#spring.datasource.username=postgres
+#spring.datasource.password=keno7396
+#spring.jpa.hibernate.ddl-auto=update
+#spring.jpa.show-sql=true

@@ -1,5 +1,7 @@
 package com.example.time_logging.auth;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,6 +12,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AuthenticationResponse {
+    @JsonProperty("accessToken")
     private String accessToken;
+    @JsonProperty("refreshToken")
+    private String refreshToken;
 
 }

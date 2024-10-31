@@ -14,7 +14,13 @@ spring:
       database: postgresql
       database-platform: org.hibernate.dialect.PostgreSQLDialect
 
-
+  application:
+    security:
+      jwt:
+        secret-key: TU2X6iU3I8XE1UhJdOAN/H7NpsEDTA//gg2fTZpcD3U=
+        expiration: 86400000 # 1 day
+        refresh-token:
+          expiration: 604800000 # 7 days
 #spring.application.name=time-logging
 #spring.datasource.url=jdbc:postgresql://localhost:5432/timeloggingloc
 #spring.datasource.username=postgres
